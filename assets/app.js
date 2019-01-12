@@ -112,7 +112,7 @@ $(document).ready(function () {
         selectBtn.attr("lng", snap.coordinates[1]);
         selectBtn.attr("distance", distanceTo);
         selectBtn.attr("role", "button");
-        selectBtn.text("Choose");
+        selectBtn.text(snap.name);
 
         // replace + marks in street address to spaces
         var snapStreet = snap.street;
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
         // Adding the other student information to a chart
         var newRow = $("<tr>").append(
-          $("<td>").text(snap.name),
+          // $("<td>").text(snap.name),
           // $("<td>").text(snapStreet),
           $("<td>").text(milesTo),
           // $("<td>").text(snap.hours),

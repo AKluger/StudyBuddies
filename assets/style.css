@@ -1,12 +1,17 @@
 body{
-    background-color: #e0e0d2!important;
+    background-color: #ffffff!important;
 }
 
 .jumbotron_edge{
     border-radius: 0!important;
 }
 .jumbotron_icyblueback{
-    background-color: #d0e0e2;
+    background-color: #81d2e0;
+}
+
+.container-big {
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 /* mapListSelectPage, same css as responsive web design for images */
@@ -40,16 +45,16 @@ body{
 
 /* background */
 .icy_blue{ 
-    background-color: #86B0B3!important;
+    background-color:#e6186d!important;
 }
 .icy-blueback{
-    background-color: #b1ccce;
+    background-color: #81d2e0;
 }
 .tan_bottom{
-    border-bottom: 20px solid #52354C;
+    border-bottom: 20px solid #edb625;
 }
 .grey_back{
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     padding-top: 20px;
     padding: 10px;
     font-size: 20px;
@@ -79,3 +84,14 @@ body{
     text-align: center;
 }
 
+.btn-primary  {
+    border: 0px;
+}
+
+.buddy-list {
+    background-color: #81d2e0;
+}
+
+.smallpad   {
+    padding: 40px 20px;
+}
