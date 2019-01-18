@@ -25,7 +25,7 @@
 
 #### More to Come
 
-* this app was originally the creation of a four-person team.  The original repo can be found at Akluger/Project-1
+* this app was originally the creation of a four-person team.  The original repo can be found at https://github.com/AKluger/Project-One
 * I am tweaking the design of the app, the look of the app, and the underlying technologies to create a more robust product
 * Node.js will be implemented to secure API keys and user data
 * a new map API will replace TomTom, and potentially Yelp will be swapped for google locations.
