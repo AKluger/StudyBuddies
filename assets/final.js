@@ -129,11 +129,11 @@ $(document).ready(function () {
                 $('#reset').html("");
                 // Add confirmation message that user was removed with a button to take them back to enterform
                 $('#reset').append("<br>");
-                $('#reset').append("You have been removed from the database");
+                $('#reset').append("All clear! You have been removed from the database");
                 $('#reset').append("<br><br>");
                 var restartLink = $("<a>");
-                restartLink.attr("class", "btn btn-secondary chosen");
-                restartLink.attr("href", "enterform.html");
+                restartLink.attr("class", "btn btn-primary btn-lg ptserif dark_blueback");
+                restartLink.attr("href", "index.html");
                 restartLink.text("Restart from entry form");
                 $('#reset').append(restartLink);
             });
