@@ -9,6 +9,10 @@ body{
     background-color: #81d2e0;
 }
 
+.needs-validation {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .container-big {
     margin-left: 7%;
     margin-right: 7%;
@@ -89,9 +93,15 @@ body{
 }
 
 .buddy-list {
-    background-color: #81d2e0;
+    /* background-color: #81d2e0; */
+    background-color: white;
 }
 
 .smallpad   {
     padding: 40px 20px;
 }
+
+/* #name  {
+    text-decoration:none;
+    text-decoration-color: #e6186d;
+} */

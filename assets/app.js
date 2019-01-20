@@ -62,7 +62,7 @@ $(document).ready(function () {
       if (snap.name !== localStorage.getItem("name")) {
         var marker = tomtom.L.marker(snap.coordinates, {
           icon: tomtom.L.icon({
-            iconUrl: 'sdk/images/ic_map_poi_027-black.png',
+            iconUrl: 'assets/learning.png',
             iconSize: [40, 40]
           })
         }).addTo(map).bindPopup(snap.name);
