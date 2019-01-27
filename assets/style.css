@@ -49,13 +49,15 @@ body{
 
 /* background */
 .icy_blue{ 
-    background-color:#e6186d!important;
+    /* background-color:#e6186d!important; */
+    background-color:#3fb990;
 }
 .icy-blueback{
     background-color: #81d2e0;
 }
 .tan_bottom{
-    border-bottom: 20px solid #edb625;
+    /* border-bottom: 20px solid #edb625; */
+    border-bottom: 20px solid #e6186d;
 }
 .grey_back{
     background-color: #ffffff;
@@ -81,7 +83,8 @@ body{
 }
 
 .size_ten{
-    width: 50px;
+    width: 100px;
+    line-height: 20px;
 }
 .spacetop{
     padding-top: 50px;
@@ -105,3 +108,7 @@ body{
     text-decoration:none;
     text-decoration-color: #e6186d;
 } */
+
+#slack  {
+    color: white;
+}
