@@ -5,7 +5,7 @@ body{
 .jumbotron_edge{
     border-radius: 0!important;
 }
-.jumbotron_icyblueback{
+.jumbotron_green{
     background-color: #81d2e0;
 }
 
@@ -14,8 +14,8 @@ body{
     padding-right: 10%;
 }
 .container-big {
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 /* mapListSelectPage, same css as responsive web design for images */
@@ -38,17 +38,17 @@ body{
 
 /* color section */
 /* header text */
-.dark_blue{ 
+.purp{ 
     color: #52354C!important;
 }
 
 /* button background */
-.dark_blueback{ 
+.purpback{ 
     background-color: #52354C!important;
 }
 
 /* background */
-.icy_blue{ 
+.green{ 
     /* background-color:#e6186d!important; */
     background-color:#3fb990;
 }
