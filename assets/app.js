@@ -62,7 +62,7 @@ $(document).ready(function () {
       if (snap.name !== localStorage.getItem("name")) {
         var marker = tomtom.L.marker(snap.coordinates, {
           icon: tomtom.L.icon({
-            iconUrl: 'assets/learning.png',
+            iconUrl: 'assets/search.png',
             iconSize: [40, 40]
           })
         }).addTo(map).bindPopup(snap.name);
@@ -130,7 +130,7 @@ $(document).ready(function () {
           // $("<td>").text(snap.hours),
           $("<td>").text(endTime),
           $("<td>").append(selectBtn)
-        );
+        ).addClass("buddyRow");
 
         // Append the new row to the html
         $("tbody").append(newRow);
@@ -162,6 +162,7 @@ $(document).ready(function () {
             }
           }
           if (shouldSwitch) {
+            //put next row in front of current row (swapping places)
             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
             switching = true;
           }
