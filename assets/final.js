@@ -98,7 +98,7 @@ $(document).ready(function () {
         //Adding chosen study buddy icon
         var chosenMarker = tomtom.L.marker(chosenCoordinates, {
             icon: tomtom.L.icon({
-                iconUrl: 'assets/learning.png',
+                iconUrl: 'assets/search.png',
                 iconSize: [40, 40]
             })
         }).addTo(map).bindPopup(chosenName);

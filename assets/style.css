@@ -27,8 +27,6 @@ body{
     height: 500px;
 }
 
-/* google font section remove after decision */
-
 .fredericka{
     font-family: 'Fredericka the Great', cursive;
 }
@@ -39,25 +37,37 @@ body{
 /* color section */
 /* header text */
 .purp{ 
-    color: #52354C!important;
+    color: black!important;
 }
 
 /* button background */
 .purpback{ 
-    background-color: #52354C!important;
+    background-color: black;
+}
+
+.purpback:hover{ 
+    background-color: #3fb990;
+}
+
+.slackBtn{
+    background-color: #52354C;
+}
+
+.slackBtn:hover{
+    background-color: #52354C;
 }
 
 /* background */
 .green{ 
     /* background-color:#e6186d!important; */
-    background-color:#3fb990;
+    background-color:#e19526;
 }
 .icy-blueback{
     background-color: #81d2e0;
 }
 .tan_bottom{
     /* border-bottom: 20px solid #edb625; */
-    border-bottom: 20px solid #e6186d;
+    border-bottom: 20px solid #3fb990;
 }
 .grey_back{
     background-color: #ffffff;
@@ -66,7 +76,8 @@ body{
     font-size: 20px;
 }
 .clearance{
-    margin-bottom: 0;
+    margin: 0;
+    padding: 3%;
 }
 /*FLEXBOX FOR FINALSELECT.HTML*/
 
@@ -111,4 +122,18 @@ body{
 
 #slack  {
     color: white;
+}
+
+.buddyRow:hover   {
+    background-color: #6caa9d;
+}
+
+#resetUser {
+    background-color: #ff9189;
+}
+
+.heads  {
+    background-color: #3fb990;
+    padding: 8px;
+    margin: 0px;
 }
