@@ -105,7 +105,7 @@ $(document).ready(function () {
 
         // Generate a button to select
         var selectBtn = $("<a>");
-        selectBtn.attr("class", "btn btn-secondary chosen");
+        selectBtn.attr("class", "btn btn-secondary choose");
         selectBtn.attr("href", "finalselect.html");
         selectBtn.attr("id", snap.name);
         selectBtn.attr("lat", snap.coordinates[0]);
@@ -126,10 +126,11 @@ $(document).ready(function () {
         var newRow = $("<tr>").append(
           // $("<td>").text(snap.name),
           // $("<td>").text(snapStreet),
+          $("<td>").append(selectBtn),
           $("<td>").text(milesTo),
           // $("<td>").text(snap.hours),
-          $("<td>").text(endTime),
-          $("<td>").append(selectBtn)
+          $("<td>").text(endTime)
+          
         ).addClass("buddyRow");
 
         // Append the new row to the html
