@@ -137,3 +137,11 @@ body{
     padding: 8px;
     margin: 0px;
 }
+
+.choose {
+    background-color: #ff9189;
+}
+
+.choose:hover{
+    background-color: #6caa9d;
+}
