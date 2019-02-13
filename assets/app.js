@@ -172,8 +172,8 @@ $(document).ready(function () {
 
       sortTable(); // run function sortTable
 
-      // On click for chosing a study buddy
-      $(".chosen").on("click", function (event) {
+      // On click for choosing a study buddy
+      $(".choose").on("click", function (event) {
         event.preventDefault();
 
         // Retrieve latitude and longitude attributes in the clicked button and store as array

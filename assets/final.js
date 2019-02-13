@@ -1,15 +1,14 @@
 $(document).ready(function () {
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyD1nyE-SfenxVwBoxuoL92zFCEsZb0GUqo",
-        authDomain: "studybuddy-bc331.firebaseapp.com",
-        databaseURL: "https://studybuddy-bc331.firebaseio.com",
-        projectId: "studybuddy-bc331",
-        storageBucket: "studybuddy-bc331.appspot.com",
-        messagingSenderId: "21013901811"
-    };
-
-    firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBJm8I9xIU1O2e7WBkLHavxtMcWqMtCygs",
+    authDomain: "lunch-date-47bfd.firebaseapp.com",
+    databaseURL: "https://lunch-date-47bfd.firebaseio.com",
+    projectId: "lunch-date-47bfd",
+    storageBucket: "lunch-date-47bfd.appspot.com",
+    messagingSenderId: "730904291783"
+  };
+  firebase.initializeApp(config);
 
     // Create a variable to reference the database.
     var database = firebase.database();

@@ -27,6 +27,14 @@ body{
     height: 500px;
 }
 
+.intro::before{
+    color: #3fb990;
+    content: "\2022";
+    position: relative;
+    padding-right: 1em;
+}
+
+
 .fredericka{
     font-family: 'Fredericka the Great', cursive;
 }
@@ -70,10 +78,17 @@ body{
     border-bottom: 20px solid #3fb990;
 }
 .grey_back{
+    /* background-image: linear-gradient(to top left, #ffffff, #65b3ff); */
     background-color: #ffffff;
     padding-top: 20px;
     padding: 10px;
     font-size: 20px;
+
+}
+
+#pencil {
+    /* border: 3px solid #e19526; */
+    border-radius: 50%;
 }
 .clearance{
     margin: 0;
