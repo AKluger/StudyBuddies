@@ -49,7 +49,7 @@
         </button>
       </div>
       
-      <form class="needs-validation" novalidate>
+      <form class="needs-validation" id="userForm" novalidate>
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" class="form-control" id="name" placeholder="i.e. Jane Doe" required>
@@ -90,7 +90,7 @@
 
         <div class="form-group">
           <label for="zip_code_address">Zip Code</label>
-          <input type="number" minlength="5" min="08000" max="19999" class="form-control" id="zip_code_address"
+          <input type="number" minlength="5" min="00001" max="99999" class="form-control" id="zip_code_address"
             placeholder="Zip Code" required>
           <div class="invalid-feedback">
             Enter a valid zipcode
