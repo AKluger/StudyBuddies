@@ -16,13 +16,12 @@ $(document).ready(function () {
   var database = firebase.database();
 
   // Removing users from firebase whose endtime has passed
-  var cutoff = moment() - 1; // basically now but one millisecond behind, this displays the actual time instead of the object
+  var cutoff = moment() - 1;
   var old = firebase.database().ref('users').orderByChild('endtime').endAt(cutoff).limitToLast(1);
   var listener = old.on('child_added', function (snapshot) {
     snapshot.ref.remove();
   });
 
-  // Get the user location from the local storage
   var street = localStorage.getItem("street");
   var city = localStorage.getItem("city");
   var state = localStorage.getItem("state");
@@ -67,7 +66,6 @@ $(document).ready(function () {
           })
         }).addTo(map).bindPopup(snap.name);
 
-
         // Variables needed to solving distance in order to sort the table later by distance
         var distanceTo;
         var distanceLat;
@@ -96,10 +94,7 @@ $(document).ready(function () {
         // degree can be coverted to meters by multiplying with 111,139
         distanceTo = distanceTo * 111139;
         distanceTo = Math.round(distanceTo);
-        
 
-
-        // Convert endtime to HH:mm format
         var endTime = snap.endtime;
         endTime = moment(endTime).format("LT");
 
@@ -124,16 +119,11 @@ $(document).ready(function () {
 
         // Adding the other student information to a chart
         var newRow = $("<tr>").append(
-          // $("<td>").text(snap.name),
-          // $("<td>").text(snapStreet),
           $("<td>").append(selectBtn),
           $("<td>").text(milesTo),
-          // $("<td>").text(snap.hours),
           $("<td>").text(endTime)
-          
         ).addClass("buddyRow");
 
-        // Append the new row to the html
         $("tbody").append(newRow);
       }; // close if statement to avoid duplicating icons 
 
@@ -172,7 +162,6 @@ $(document).ready(function () {
 
       sortTable(); // run function sortTable
 
-      // On click for choosing a study buddy
       $(".choose").on("click", function (event) {
         event.preventDefault();
 
@@ -187,10 +176,7 @@ $(document).ready(function () {
         // Move directly into final select
         window.location.href = "finalselect.html";
 
-      }); // close onclick button
-
-    }); // close firebase
-
-  }); // close ajax
-
-}); // close document ready
+      });
+    });
+  });
+}); 

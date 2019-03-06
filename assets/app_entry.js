@@ -13,7 +13,6 @@ firebase.initializeApp(config);
 // Create a variable to reference the database.
 var database = firebase.database();
 
-// Initial Values
 var name = "";
 var street = "";
 var city = "";
@@ -22,7 +21,7 @@ var zip = "";
 var hours = "";
 var endtime;
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+//  disabling form submissions if there are invalid fields
 (function () {
   'use strict';
   window.addEventListener('load', function () {
@@ -33,12 +32,6 @@ var endtime;
       form.addEventListener('submit', function (event) {
 
         event.preventDefault();
-        // event.stopPropagation();
-        // if (form.checkValidity() === false) {
-        // }
-
-        // form.classList.add('was-validated')
-
         var userForm = document.getElementById('userForm');
         var isValid = userForm.checkValidity();
 
@@ -49,11 +42,9 @@ var endtime;
           var streetInput = $('#street_address').val().length;
           var nameInput = $('#name').val().length;
 
-          // if (zipCodeInput > 0 && cityInput > 0 && streetInput > 0 && nameInput > 0) {
-
           name = $("#name").val().trim();
           street = $("#street_address").val().trim();
-          street = street.replace(/\s+/g, '+');  // this regex replaces spaces with + marks e.g. 3000+Market+St
+          street = street.replace(/\s+/g, '+');
           city = $("#city_address").val().trim();
           city = city.replace(/\s+/g, '+');
           state = $("#state_address").val().trim();
@@ -75,21 +66,17 @@ var endtime;
           // Ajax code to geocod.io to convert text address to latitude and longitude
           var queryURL2 = "https://api.geocod.io/v1.3/geocode?street=" + street + "&city=" + city + "&state=" + state + "&api_key=6446f59bc5ec449c45ce44c9c4466c5f61816e1";
 
-          console.log(queryURL2);
-
           var tempCoordinates = [];
 
           $.ajax({
             url: queryURL2,
             method: "GET"
           }).then(function (response) {
-            console.log(response);
-            //Storing latitude and longitude
-            var lat = response.results[0].location.lat; // stores latitude
-            var lng = response.results[0].location.lng; // stores longitude
-            tempCoordinates = [lat, lng];
 
-            console.log(tempCoordinates);
+            //Storing latitude and longitude
+            var lat = response.results[0].location.lat;
+            var lng = response.results[0].location.lng;
+            tempCoordinates = [lat, lng];
 
             // Code for handling the push
             database.ref("users").push({
@@ -109,8 +96,7 @@ var endtime;
           });
         }
 
-        else {alert("Please complete all required fields")}
-
+        else { alert("Please complete all required fields") }
       }, false);
     });
   }, false);
